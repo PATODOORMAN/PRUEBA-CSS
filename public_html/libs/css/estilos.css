@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*******************************************************/
-/********** Hoja de estilos básicos Prueba CSS *******/
+/********** Hoja de estilos básicos Prueba CSS ********/
 /*****************************************************/
 @font-face {
     font-family: "DancingScript";
@@ -9,31 +9,141 @@
         url(../../fonts/DancingScript-Regular.ttf) format("truetype"),
         url(../../fonts/DancingScript-Bold.ttf) format("truetype");
 }
+
+html {background-color: #02010a;}
+
 body {
-    font-family:Arial, sans-serif;
+    font-family:DancingScript, sans-serif;
     line-height:1.5;
-    color:#333;
+    color:#FFF;
+    width: 900px;
+    height: 100%;
+    margin: 0 auto;
 }
 
+/*********************************************************/
+/********************* Estilos Header *******************/
+/*******************************************************/
+
+header {
+    background-color: #5b7989;
+    color: #FFF;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    display: table;
+}
+
+header h1 {
+width:60%;
+margin: 0;
+padding-left: 2vw;
+line-height: 2.6;
+text-shadow: 2px 2px #02010a;
+display:table-cell;
+vertical-align:middle;
+}
+
+/***********************************************************/
+/********************* Estilos Botonera *******************/
+/*********************************************************/
+
+nav {
+    display:table-cell;
+    vertical-align:middle;
+    font-size: 1.2em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding-right: 1vw;
+    text-align: right;
+}
+
+nav ul li {
+    float: left;
+    margin: 0;
+    width: 33%;
+}
+
+nav ul li a:link, a:visited, a:hover, a:active, a:focus {
+text-decoration: underline;
+color:inherit;
+}
+
+nav ul li a.actual {text-decoration: none;}
+
+/************************************************************/
+/********************* Estilos Contenidos *******************/
+/**********************************************************/
+
+main {
+    width: 900px;
+    height: 100%;
+}
+
+/********************* Contenido Index *******************/
+
+section.central {
+    width: 900px;
+    height: 500px;
+    background-color: #82c3a6;
+    text-align: center;
+}
+
+section.secundaria {
+    width: 898px;
+    height: 300px;
+    background-color: #d5c75f;
+    border: 1px solid white;
+}
+
+/**************** Contenido Paisajes y Retratos **************/
+
+section.galeria {
+    width: 900px;
+    height: 600px;
+    background-color: #d5c75f;
+    text-align: center;
+}
+
+
+
+
+/*********************************************************/
+/********************* Estilos Footer *******************/
+/*******************************************************/
+
+footer {
+color: #000;
+background-color: #C6d5c5;
+border-radius: 0 0 10px 10px;
+width: 900px;
+height: 200px;
+}
+
+
+
+/*************************************************************/
+/********************* Estilos Tipografía *******************/
+/***********************************************************/
+
 h1 {
-font-size: 2.4em;
 font-size: 2.4rem;
-margin-top: -20px;
+font-size: 2.4em;
+
 }
 
 h2 {
-font-size: 1.6em;
 font-size: 1.6rem;
+font-size: 1.6em;
 }
 
 h3 {
-font-size: 1.25em;
 font-size: 1.25rem;
+font-size: 1.25em;
 }
 
-main {margin-left: 70px;}
-
-footer {text-align: center;}
 
 .centrado {text-align: center !important;}
 
@@ -47,10 +157,6 @@ footer {text-align: center;}
 
 .block {display: block;}
 
-.twitter {
-width:600px;
-margin:0 auto;
-}
-#lugar {resize: none;}
+/********************* Estilos Especiales *******************/
 
-hr.separador {width : 80%; margin: 0;}
+.clear-float {clear: both;}
